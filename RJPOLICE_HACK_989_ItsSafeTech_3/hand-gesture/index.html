@@ -1,0 +1,170 @@
+<!-- <!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>CodePen - MediaPipe HandGestureRecognizer Task for web</title>
+  <link rel="stylesheet" href="./style.css">
+
+</head>
+<body>
+
+<link href="https://unpkg.com/material-components-web@latest/dist/material-components-web.min.css" rel="stylesheet">
+<script src="https://unpkg.com/material-components-web@latest/dist/material-components-web.min.js"></script>
+
+  <div id="liveView" class="videoView">
+    <button id="webcamButton" class="mdc-button mdc-button--raised">
+      <span class="mdc-button__ripple"></span>
+      <span class="mdc-button__label">ENABLE WEBCAM</span>
+    </button>
+    <div style="position: relative;">
+      <video id="webcam" autoplay playsinline></video>
+      <canvas class="output_canvas" id="output_canvas" width="1280" height="720" style="position: absolute; left: 0px; top: 0px;"></canvas>
+      <p id='gesture_output' class="output">
+    </div>
+  </div>
+</section>
+
+<script type="module" src="./script.js"></script>
+
+</body>
+</html> -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Smart Monitoring Dashboard</title>
+  <link rel="stylesheet" href="./style.css">
+  <link href="https://unpkg.com/material-components-web@latest/dist/material-components-web.min.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+</head>
+<body>
+  <!-- Horizontal Navigation Bar -->
+  <header class="navbar">
+    <div class="navbar-logo">
+      <img src="/logo.png" alt="Logo" class="logo-img" />
+      <h3>Smart Monitor</h3>
+    </div>
+    <nav class="navbar-links">
+      <a href="http://localhost:3000" class="nav-link">
+        <i class="material-icons">dashboard</i>
+        <span>Dashboard</span>
+      </a>
+      <a href="http://localhost:3000/riskyitems" class="nav-link">
+        <i class="material-icons">warning</i>
+        <span>Risky Items</span>
+      </a>
+      <a href="http://localhost:3000/riskymovements" class="nav-link">
+        <i class="material-icons">directions_run</i>
+        <span>Risky Movements</span>
+      </a>
+      <a href="http://localhost:3000/faceRecognition" class="nav-link">
+        <i class="material-icons">face</i>
+        <span>Face Recognition</span>
+      </a>
+      <a href="/alerts" class="nav-link">
+        <i class="material-icons">notifications</i>
+        <span>Alerts</span>
+      </a>
+      <a href="/hg" class="nav-link active">
+        <i class="material-icons">pan_tool</i>
+        <span>Hand Gesture</span>
+      </a>
+    </nav>
+    <!-- <div class="user-profile">
+      <span>Admin User</span
+        >
+      <img src="/placeholder.svg?height=40&width=40" alt="User" class="user-avatar" />
+    </div> -->
+  </header>
+
+  <!-- Main Content -->
+  <div class="main-content">
+    <!-- Page Header -->
+    <div class="page-header">
+      <h1>Hand Gesture Recognition</h1>
+    </div>
+
+    <!-- Dashboard Content -->
+    <div class="dashboard-content">
+      <!-- Webcam Feed Card -->
+      <div class="card webcam-card">
+        <div class="card-header">
+          <h2>Live Hand Gesture Detection</h2>
+          <span class="status-indicator active">Live</span>
+        </div>
+        <div class="card-body">
+          <div id="liveView" class="videoView">
+            <button id="webcamButton" class="mdc-button mdc-button--raised">
+              <span class="mdc-button__ripple"></span>
+              <span class="mdc-button__label">ENABLE WEBCAM</span>
+            </button>
+            <div class="video-container">
+              <video id="webcam" autoplay playsinline></video>
+              <canvas class="output_canvas" id="output_canvas" width="1280" height="720"></canvas>
+            </div>
+            <p id="gesture_output" class="output"></p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Gesture Info Card -->
+      <div class="card info-card">
+        <div class="card-header">
+          <h2>Gesture Information</h2>
+        </div>
+        <div class="card-body">
+          <div class="info-item">
+            <i class="material-icons">thumb_up</i>
+            <div>
+              <h3>Thumbs Up</h3>
+              <p>Hold for 3 seconds to stop alarm</p>
+            </div>
+          </div>
+          <div class="info-item">
+            <i class="material-icons">back_hand</i>
+            <div>
+              <h3>Open Palm</h3>
+              <p>Hold for 5 seconds to trigger alarm</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Recent Detections Card -->
+      <div class="card history-card">
+        <div class="card-header">
+          <h2>Recent Detections</h2>
+        </div>
+        <div class="card-body">
+          <div class="detection-list">
+            <div class="detection-item">
+              <span class="time">10:45 AM</span>
+              <span class="gesture">Thumbs Up</span>
+              <span class="confidence">98%</span>
+            </div>
+            <div class="detection-item">
+              <span class="time">10:43 AM</span>
+              <span class="gesture">Open Palm</span>
+              <span class="confidence">95%</span>
+            </div>
+            <div class="detection-item">
+              <span class="time">10:40 AM</span>
+              <span class="gesture">Pointing</span>
+              <span class="confidence">92%</span>
+            </div>
+            <div class="detection-item">
+              <span class="time">10:38 AM</span>
+              <span class="gesture">Thumbs Down</span>
+              <span class="confidence">97%</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="https://unpkg.com/material-components-web@latest/dist/material-components-web.min.js"></script>
+  <script type="module" src="./script.js"></script>
+</body>
+</html>

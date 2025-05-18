@@ -1,0 +1,128 @@
+.riskyMovCamWrap {
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+    margin-top: 30px;
+}
+
+.riskyMovCamDiv {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+
+.riskyMovCamFeed {
+ width: 50vw;
+ height: auto;
+ border-radius: 15px;   
+}
+
+.riskyMovCam {
+    width: 50vw;
+    height: 28.1vw;
+    border-radius: 15px; 
+    background-color: grey;
+}
+
+.riskyMovAlertsDiv {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 20px;
+    width: 40vw;
+    height: 28vw;
+    border-radius: 15px;
+    box-shadow: 4px 4px 21.4px 0px rgba(0, 0, 0, 0.15);
+    border: 1px solid #e0e0e0;
+    padding-top: 30px;
+}
+
+.riskyMovMeasurements {
+    width: 100vw;
+    display: grid;
+    grid-template-columns: auto auto auto auto auto auto;
+    grid-template-rows: auto auto;
+    column-gap: 85px;
+    align-items: center;
+    justify-content: center;
+    margin-top: 30px;
+    margin-bottom: 100px;
+}
+
+.measureCard {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 10vw;
+    height: auto;
+}
+
+.measuImg {
+    width: 14vw;
+    height: auto;
+    border: 1px solid grey;
+    border-radius: 10px;
+    margin-bottom: 10px;
+}
+
+/* Alert Card */
+.warning {
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    width: 37vw;
+    padding: 12px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: start;
+    background: #F7C752;
+    border-radius: 8px;
+    box-shadow: 0px 0px 5px -3px #111;
+  }
+  
+  .warning__icon {
+    width: 20px;
+    height: 20px;
+    transform: translateY(-2px);
+    margin-right: 8px;
+  }
+  
+  .warning__icon path {
+    fill: #393A37;
+  }
+  
+  .warning__title {
+    font-weight: 500;
+    font-size: 14px;
+    color: #393A37;
+  }
+  
+  .warning__close {
+    width: 20px;
+    height: 20px;
+    margin-left: auto;
+    cursor: pointer;
+  }
+  
+  .warning__close path {
+    fill: #393A37;
+  }
+
+  .alertsDiv {
+    width: 40vw;
+    margin-left: 3vw;
+    margin-top: 2vw;
+    margin-bottom: 2vw;
+  }
+
+.alertsCardWrap {
+  display: grid;
+  grid-template-columns: auto auto;
+  grid-template-rows: auto auto;
+  align-items: center;
+  justify-content: center;
+  column-gap: 50px;
+  margin-left: -2vw;
+}

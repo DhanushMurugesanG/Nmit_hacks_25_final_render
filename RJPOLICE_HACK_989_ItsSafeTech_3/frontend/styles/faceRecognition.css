@@ -1,0 +1,22 @@
+.faceRecogCamDiv {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin-top: 30px;
+    margin-bottom: 50px;
+}
+
+
+.faceRecogCamFeed {
+ width: 80vw;
+ height: auto;
+ border-radius: 15px;   
+}
+
+.faceRecogCam {
+    width: 80vw;
+    height: 40vw;
+    border-radius: 15px; 
+    background-color: grey;
+}

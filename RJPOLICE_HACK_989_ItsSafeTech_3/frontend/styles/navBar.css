@@ -1,0 +1,33 @@
+.navBar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100vw;
+    height: 7vw;
+    background-color: #000000;
+    position: fixed;
+}
+
+.logo {
+    width: 18vw;
+    height: auto;
+    margin-left: 1vw;
+}
+
+.linksDiv {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 50px;
+    margin-right: 4vw;
+}
+
+.link {
+    font-size: 1.2vw;
+    color: #ffffff;
+    cursor: pointer;
+}
+
+.link:hover {
+    color: #999999;
+}

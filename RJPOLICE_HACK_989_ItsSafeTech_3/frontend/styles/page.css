@@ -1,0 +1,99 @@
+.headingDiv {
+  margin-left: 3vw;
+}
+
+.heading {
+  font-family: var(--fontA);
+  font-size: 1.8vw;
+  font-weight: 600;
+  color: #000000;
+}
+
+.subHeading {
+  font-family: var(--fontB);
+  font-size: 1.2vw;
+  color: #868686;
+  margin-top: 2px;
+}
+
+.camFeedWrap {
+  display: flex;
+  flex-direction: column;
+  padding-top: 10vw;
+}
+
+.camFeedDiv {
+  display: grid;
+  grid-template-columns: auto auto auto auto;
+  align-items: center;
+  justify-content: center;
+  column-gap: 30px;
+  row-gap: 30px;
+  margin-top: 20px;
+}
+
+.camFeedOuter {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  border-radius: 20px;
+  padding: 0.9vw;
+  box-shadow: 4px 4px 21.4px 0px rgba(0, 0, 0, 0.15);
+  border: 1px solid #e0e0e0;
+}
+
+.camFeed {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 10px;
+  width: 20vw;
+  height: 12vw;
+  background-color: #868686;
+}
+
+.camFeedWrap p {
+  margin-top: 0.8vw;
+  font-size: 1.1vw;
+  font-weight: 600;
+  font-family: var(--fontA);
+}
+
+.recordFeedWrap {
+  margin-top: 3vw;
+}
+
+.recordFeedDiv {
+  display: grid;
+  grid-template-columns: auto auto auto auto auto;
+  align-items: center;
+  justify-content: center;
+  column-gap: 30px;
+  row-gap: 30px;
+  margin-top: 20px;
+}
+
+.recordFeedOuter {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  border-radius: 20px;
+  width: 17vw;
+  height: 12vw;
+  box-shadow: 4px 4px 21.4px 0px rgba(0, 0, 0, 0.15);
+  cursor: pointer;
+}
+
+.mp4Icon {
+  width: 5vw;
+  height: auto;
+}
+
+.recordFeedWrap p {
+  margin-top: 0.8vw;
+  font-size: 1vw;
+  font-family: var(--fontA);
+  margin-top: 20px;
+}
